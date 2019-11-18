@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'bold';
+    src: url('Roboto-Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('Roboto-Regalar-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2 {
+//    font-family: 'bold', Arial, Helvetica, sans-serif;
+}
+
+body {
+
+//	border-left: 4em solid #1e212a;
+    
+//    font-family: 'regular', Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+//    background: linear-gradient(to bottom, orange, yellow);
+ //   background: linear-gradient(to bottom, #274e85, #4180db);
+background: linear-gradient(to bottom,  #2DD57B, #00BABC);
+}
+
+#root {
+    margin-left: .3em;
+    background-color: white;
+    padding-left: 7.5em;
+    padding-top: 7.5em;
+    padding-bottom: 10em;
+    min-height: 100%;
+}
+
+header ul {
+  margin-top: 1em;
+}
+
+#chapo {
+   margin-top: 1em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+
+    text-decoration: underline;
+}
+
+p {
+    max-width: 20em;
+}
+
+#workbox {
+    margin-left: 2em;
+    border-left: 1px rgba(170,170,170,0.8) dotted;
+    padding-left: 2.5em;
+}
+
+header {
+    width: 25em;
+}
+
+.grey {
+    color: rgb(170,170,170);
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+#col-mid h4, #col-left h3 {
+    margin-top: 2em;
+}
+
+#col-left h2 {
+    margin-top: 5em;
+    line-height: .9em;
+}
+
+.skills h3 {
+    display: inline-block;
+}
+
+.skills h3, h4 {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+.cols {
+    display: inline-block;
+}
+
+#col-left {
+    width: 25em;
+}
+
+#col-mid, #col-right {
+    vertical-align: top;
+}
+
+#col-right {
+    margin-left: 5em;
+}
+
+#col-right h2 {
+    margin-bottom: 1.5em;
+}
+
+.skills span {
+    font-size: 1.5em;
+    line-height: .0em;
+}
+
+.skills .grey {
+    opacity: 0.1;
+}
+
+
+.skills h2 {
+    margin:3em 0 1em 0;
+}
+
+#col-mid h2 {
+    margin-bottom:1em;
+}
+
+.skills h3 {
+    width:7em;
+}
+
+@media (max-width: 60em) {
+    body {
+        overflow-x: hidden;
+    }
+    .cols {
+        display: block;
+    }
+    #col-mid h2 {
+        margin: 2em 0 1em 0;
+    }
+}
+
+@media (max-width: 30em) {
+   
+    #root {
+        padding-left: 10%;
+    }
+
+    header, #col-left {
+        width: auto;
+    }
+    
+}
