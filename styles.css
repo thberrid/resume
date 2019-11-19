@@ -12,20 +12,21 @@
     font-style: normal;
 }
 
-h1, h2 {
-//    font-family: 'bold', Arial, Helvetica, sans-serif;
+.fs-075 { font-size: .75em }
+.mt-05 { margin-top: .5em }
+.grey { color: rgb(170,170,170) }
+
+a { 
+	color: inherit;
+    text-decoration: none;
 }
+a:hover { text-decoration: underline }
+p { max-width: 20em }
 
 body {
-
-//	border-left: 4em solid #1e212a;
-    
-//    font-family: 'regular', Arial, Helvetica, sans-serif;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-//    background: linear-gradient(to bottom, orange, yellow);
- //   background: linear-gradient(to bottom, #274e85, #4180db);
-background: linear-gradient(to bottom,  #2DD57B, #00BABC);
+	background: linear-gradient(to bottom,  #2DD57B, #00BABC);
 }
 
 #root {
@@ -37,40 +38,15 @@ background: linear-gradient(to bottom,  #2DD57B, #00BABC);
     min-height: 100%;
 }
 
-header ul {
-  margin-top: 1em;
-}
+header { width: 25em }
+#infos-box { margin-top: 5em }
+#chapo { margin-top: 2em }
 
-#chapo {
-   margin-top: 1em;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover {
-
-    text-decoration: underline;
-}
-
-p {
-    max-width: 20em;
-}
-
-#workbox {
+.work-list {
     margin-left: 2em;
     border-left: 1px rgba(170,170,170,0.8) dotted;
     padding-left: 2.5em;
-}
-
-header {
-    width: 25em;
-}
-
-.grey {
-    color: rgb(170,170,170);
+	margin-bottom: 5em;
 }
 
 h1, h2, h3, h4, p {
@@ -79,6 +55,7 @@ h1, h2, h3, h4, p {
 
 #col-mid h4, #col-left h3 {
     margin-top: 2em;
+	margin-bottom: .5em;
 }
 
 #col-left h2 {
