@@ -144,3 +144,13 @@ ul {
     }
     
 }
+
+@media print {
+	body { 
+		font-size: .8em;
+		background: white 
+	} 
+	.cols {
+        display: inline-block;
+	}
+}
