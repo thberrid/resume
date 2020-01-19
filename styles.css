@@ -153,4 +153,7 @@ ul {
 	.cols {
         display: inline-block;
 	}
+	#col-mid {
+		margin-top: -3em;
+	}
 }
