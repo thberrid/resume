@@ -1,45 +1,79 @@
-body {
-    margin:                 0;
-    padding:                5em 7em;
-    font-family:            Arial;
-    letter-spacing:         -.01em;
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-style: normal;
+    src: url("fonts/Montserrat-Light.woff");
 }
-a { color:                  black; text-decoration: none; }
-h1 { margin:                0 }
-#job-title {
-    margin:                 2em 0;
-    font-weight:            normal;
-    font-style:             italic;
+@font-face {
+    font-family: "Montserrat";
+	font-weight: 500;
+    font-style: normal;
+    src: url("fonts/Montserrat-Medium.woff");
 }
-#infos {
-    margin-bottom:          5em;
-    margin-top:             0;
-    font-style:             italic;
+@font-face {
+    font-family: "Montserrat";
+	font-weight: 900;
+    font-style: normal;
+    src: url("fonts/Montserrat-Black.woff");
 }
-.unboxed {
-    padding-left:           0em;
-    border-left:            1px dotted white;
-    margin-bottom:          5em;
+a { text-decoration: none }
+a:hover {
+	background-color: #232323;
+	color: #f5f5f5
 }
-.page-width { width:        61em }
-.col-width { width:         30em }
+body { 
+	background-color: #f5f5f5;
+	padding: 0;
+	margin: 4em;
+}
+body, a { color: #232323}
+body { font-family: "Montserrat", Arial, sans-serif }
+h1 { margin: 0 }
+h1, h2 {
+	font-weight: 900;
+	text-transform: uppercase
+}
+h2, .intro { font-size: 1.2em }
+h3, .intro { font-weight: 500 }
 .col {
-    display:                inline-block;
-    vertical-align:         top;
+	display: inline-block;
+	vertical-align: top
 }
-#photo {
-    width:                  12em;
-    height:                 12em;
-    display:                inline-block;
-    margin-right:           6em;
-    vertical-align:         top;
-    border-radius:          50%;
-    background-color:       grey;
-    background-image:       url('large_thberrid.jpg');
-    background-position:    center;
-    background-size:        cover;
+.col-left {
+	width: 15em;
+	margin-right: 4em
 }
-h2, h3, h4 { font-weight: normal }
-main { margin-top:          3em }
-main h2, main h3, main h4 { margin-bottom: 0; }
-main p { margin-top: .5em; margin-bottom: 3em; }
+.date {
+	margin-top: 0;
+	margin-bottom: 4em;
+	font-size: 1.4em;
+}
+header, .col-right { width: 30em }
+header { 
+	padding-left: 19em;
+	margin-bottom: 4em
+}
+.section { margin-bottom: 4em }
+p, h3, h4, li {
+	font-size: 1em;
+	margin-top: 2em; 
+}
+p, h4, ul { font-weight: 100 }
+ul {
+	list-style-type: none;
+	padding: 0
+}
+
+@media screen and ( max-width: 60em ) {
+	body { 
+		margin: 10%;
+	}
+	header { 
+		padding-left: 0;
+	}
+	header, .col-right, .col-left { width: auto }
+}
+
+@media print {
+	body { background-color: white	}
+}
