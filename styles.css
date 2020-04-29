@@ -75,5 +75,8 @@ ul {
 }
 
 @media print {
-	body { background-color: white	}
+	body {
+		background-color: white;
+		font-size: .75em 
+	}
 }
